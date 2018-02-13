@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Players</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let player of players">
+      <ion-card>
+        <ion-card-title text-center>
+          {{player.title}} {{player.name}}
+        </ion-card-title>
+        <ion-card-header>
+          <div class="player-description">
+            <div class="player-description__world-rank">
+              World #{{player.worldRank}}
+            </div>
+            <div class="player-description__elo">
+              Elo {{player.currentElo}} (highest: {{player.highestElo}})
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row *ngIf="player.achievements">
+            Achievements:
+            <ion-list>
+              <ion-item *ngFor="let achievement of player.achievements">
+                {{achievement.title}} - {{achievement.date}}
+              </ion-item>
+            </ion-list>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,31 @@
+{
+  "players": [
+    {
+      "name": "Magnus Carlsen",
+      "title": "GM",
+      "worldRank": "1",
+      "achievements": [
+        {
+          "title": "World Champion",
+          "date": "2013"
+        },
+        {
+          "title": "World Champion",
+          "date": "2014"
+        },
+        {
+          "title": "World Champion",
+          "date": "2016"
+        }
+      ],
+      "currentElo": 2843,
+      "highestElo": 2882
+    },
+    {
+      "name": "Arthur Tönz",
+      "worldRank": "18861",
+      "currentElo": 2100,
+      "highestElo": 2133
+    }
+  ]
+}
