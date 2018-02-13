@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>myApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <name>Chess Fanboy</name>
+    <description>An app for chess fanboys</description>
+    <author email="arthur.toenz@gmail.com" href="https://github.com/Toenza">Arthur Tönz</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -78,8 +78,8 @@
     </platform>
     <allow-navigation href="http://192.168.178.41:8100" />
     <engine name="browser" spec="~5.0.3" />
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-camera" spec="^4.0.2" />
     <plugin name="cordova-plugin-calendar" spec="^5.0.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <engine name="android" spec="~7.0.0" />
 </widget>
