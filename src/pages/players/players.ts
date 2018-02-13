@@ -13,9 +13,9 @@ import {Camera, CameraOptions} from "@ionic-native/camera";
 })
 export class PlayersPage {
 
-  public players: Player[];
+  public players: Player[] = [];
   public images: string[] = [];
-  private path: string = 'assets/data/players.json';
+  private readonly path: string = 'assets/data/players.json';
   private cameraOptions: CameraOptions;
 
   constructor(public navCtrl: NavController,

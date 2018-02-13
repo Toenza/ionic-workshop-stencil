@@ -11,6 +11,7 @@ import {PlayersPage} from "../pages/players/players";
 import {HttpModule} from "@angular/http";
 import {TournamentsPage} from "../pages/tournaments/tournaments";
 import {Camera} from "@ionic-native/camera";
+import {Calendar} from "@ionic-native/calendar";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {Camera} from "@ionic-native/camera";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Camera
+    Camera,
+    Calendar
   ]
 })
 export class AppModule {
