@@ -6,5 +6,6 @@ Prerequisites:
 Android phone, Android SDK and SDK tools (adb etc), NodeJS
 
 Instructions:
+0. enable usb debugging on phone and connect phone
 1. npm install
 2. ionic cordova run android
