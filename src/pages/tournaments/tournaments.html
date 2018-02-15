@@ -3,7 +3,6 @@
     <ion-title>Tournaments</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let tournament of tournaments">
@@ -13,6 +12,7 @@
         </ion-card-title>
         <ion-card-header>
           <div class="tournament-description">
+            <chess-like text-pos="You 64 this" text-neg="I 64 this!"></chess-like>
             <div class="tournament-description__dates">
               Dates: {{tournament.dates.start}} - {{tournament.dates.end}}
             </div>

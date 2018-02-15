@@ -12,6 +12,7 @@ import {HttpModule} from "@angular/http";
 import {TournamentsPage} from "../pages/tournaments/tournaments";
 import {Camera} from "@ionic-native/camera";
 import {Calendar} from "@ionic-native/calendar";
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {Calendar} from "@ionic-native/calendar";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Camera,
     Calendar
-  ]
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule {
 }
